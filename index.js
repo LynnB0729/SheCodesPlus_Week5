@@ -19,6 +19,10 @@ axios.get(`${weatherURL}&appid=${apiKey}`).then(checkWeather);
 
 
 
+
+
+
+
 //let weatherURL = "https://api.openweathermap.org/data/2.5/weather?q=Lisbon&units=imperial&appid=cff2aa1e3c91c0248805f01bed83e69c" -- this may work as well? changed it to match video way, but was able to access data using this link -- too static maybe? 
 
 
