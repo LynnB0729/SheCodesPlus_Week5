@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        h1 {
+            color: mediumvioletred;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>AJAX PRACTICE</h1>
+
+    <script>
+        function getComments(response) {
+            console.log(response.data.email);
+        }
+        let apiUrl = "https://jsonplaceholder.typicode.com/comments/4"
+        axios.get(apiUrl).then(getComments);
+
+
+    </script>
+</body>
+
+</html>
