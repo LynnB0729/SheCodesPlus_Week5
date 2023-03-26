@@ -6,12 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geo Location Practice</title>
-    <script src="index7.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
     <h1> GeoLocation Practice</h1>
 
+
+    <script>
+        function showPosition(position) {
+            console.log(position);
+        }
+
+        navigator.geolocation.getCurrentPosition(showPosition);
+    </script>
 </body>
 
 </html>
